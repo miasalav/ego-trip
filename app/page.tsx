@@ -65,13 +65,13 @@ export default function Home() {
 
       <main className="flex items-center z-50 min-h-screen w-full justify-center relative">
         <div className="container flex items-center justify-center relative">
-          <nav className="relative w-full px-40 mt-40">
+          <nav className="relative w-full max-w-[700px] mt-10 md:mt-30">
             <h1 className="font-garamond text-6xl text-center font-bold text-font-color">
               EGO TRIP
             </h1>
             <p className="text-font-color text-sm text-center py-6 font-bold">october 19th // 1345 rue de bellechasse</p>
-            <ul className="text-md text-font-color font-garamond flex flex-row justify-between">
-              <li>
+            <ul className="text-md text-font-color font-garamond flex flex-col md:flex-row items-center md:justify-between ">
+              <li className="mb-4 md:mb-0">
                 <a
                   onClick={(e) => {
                     e.preventDefault();
@@ -82,7 +82,7 @@ export default function Home() {
                   sincerely, liv
                 </a>
               </li>
-              <li className="mt-30">
+              <li className="mb-4 md:mb-0 mt-0 md:mt-20 lg:mt-30">
                 <a
                   onClick={openForm}
                   className="hover:italic hover:cursor-pointer hover:font-bold transition-all duration-100"
@@ -90,7 +90,7 @@ export default function Home() {
                   tickets
                 </a>
               </li>
-              <li className="mt-30">
+              <li className="mb-4 md:mb-0 mt-0 md:mt-20 lg:mt-30">
                 <Link
                   href="/artist"
                   className="hover:italic hover:cursor-pointer hover:font-bold transition-all duration-100"
@@ -98,7 +98,7 @@ export default function Home() {
                   radio gi gi
                 </Link>
               </li>
-              <li className="mt-30">
+              <li className="mb-4 md:mb-0 mt-0 md:mt-20 lg:mt-30">
                 <a
                   onClick={(e) => {
                     e.preventDefault();
@@ -109,7 +109,7 @@ export default function Home() {
                   message in a bottle
                 </a>
               </li>
-              <li>
+              <li className="mb-4 md:mb-0">
                 <a
                   onClick={(e) => {
                     e.preventDefault();
