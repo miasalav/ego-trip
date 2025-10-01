@@ -3,8 +3,16 @@ import Image from "next/image";
 
 export default function ArtistPage() {
     return (
-      <main className="flex justify-center min-h-screen bg-[#f6f5ef]">
-        <div className="container py-20 flex justify-center items-center">
+      <main className="flex justify-center min-h-screen bg-[#f6f5ef] relative">
+        <video
+        src="/artist-loop.mp4"
+        autoPlay
+        muted
+        playsInline
+        loop
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+        <div className="container py-20 flex justify-center items-center z-10">
           <div className="page-content max-w-[1100px] text-font-color">
           <Link
             href="/"

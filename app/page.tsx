@@ -3,6 +3,12 @@
 import { useState, useEffect, useRef } from "react";
 import Modal from "./components/Modal";
 import Link from "next/link";
+import { GiMushroomHouse } from "react-icons/gi";
+import { IoTicketSharp } from "react-icons/io5";
+import { FaFly } from "react-icons/fa";
+import { IoMdRadio } from "react-icons/io";
+
+
 
 export default function Home() {
   const [isOpen, setModalOpen] = useState(false);
@@ -44,7 +50,7 @@ export default function Home() {
       {/* Intro video */}
       <video
         ref={introRef}
-        src="/intro.mp4"
+        src="/intro-1.mp4"
         autoPlay
         muted
         playsInline
@@ -56,7 +62,7 @@ export default function Home() {
       {/* Loop video (starts only after 4s) */}
       <video
         ref={loopRef}
-        src="/loop.mp4"
+        src="/loop-1.mp4"
         muted
         loop
         playsInline
@@ -69,57 +75,71 @@ export default function Home() {
             <h1 className="font-garamond text-6xl text-center font-bold text-font-color">
               EGO TRIP
             </h1>
-            <p className="text-font-color text-sm text-center py-6 font-bold">october 19th // 1345 rue de bellechasse</p>
+            <span className="text-font-color text-lg font-bold text-center block m-auto italic">with Gi Gi</span>
+            
+            <p className="text-font-color text-sm text-center py-6">10.19.2025 <br/> 1345 rue de bellechasse</p>
             <ul className="text-md text-font-color font-garamond flex flex-col md:flex-row items-center md:justify-between ">
-              <li className="mb-4 md:mb-0">
+            <li className="mb-4 md:mb-0">
+                <Link
+                  href="/artist"
+                  className="relative hover:cursor-pointer hover:font-bold transition-all duration-100 flex items-center group"
+                >
+                  radio gi gi
+                  <IoMdRadio className="ml-2"/>
+                  {/* underline animation */}
+                  <span className="absolute left-1/2 -bottom-1 h-[0.5px] w-0 bg-font-color transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                </Link>
+              </li>
+              <li className="mb-4 md:mb-0  mt-0 md:mt-20 lg:mt-30">
                 <a
                   onClick={(e) => {
                     e.preventDefault();
                     handleModal(0);
                   }}
-                  className="hover:italic hover:cursor-pointer hover:font-bold transition-all duration-100"
+                  className="hover:cursor-pointer hover:font-bold transition-all duration-100 flex items-center relative group"
                 >
-                  sincerely, liv
+                  let me take you on a journey
+                  <FaFly className="ml-2" />
+                  {/* underline animation */}
+                  <span className="absolute left-1/2 -bottom-1 h-[0.5px] w-0 bg-font-color transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </a>
               </li>
               <li className="mb-4 md:mb-0 mt-0 md:mt-20 lg:mt-30">
                 <a
                   onClick={openForm}
-                  className="hover:italic hover:cursor-pointer hover:font-bold transition-all duration-100"
+                  className="hover:cursor-pointer hover:font-bold transition-all duration-100 flex items-center relative group"
                 >
                   tickets
+                  <IoTicketSharp className="ml-2" />
+                  {/* underline animation */}
+                  <span className="absolute left-1/2 -bottom-1 h-[0.5px] w-0 bg-font-color transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </a>
               </li>
-              <li className="mb-4 md:mb-0 mt-0 md:mt-20 lg:mt-30">
-                <Link
-                  href="/artist"
-                  className="hover:italic hover:cursor-pointer hover:font-bold transition-all duration-100"
-                >
-                  radio gi gi
-                </Link>
-              </li>
-              <li className="mb-4 md:mb-0 mt-0 md:mt-20 lg:mt-30">
+              <li className="mb-4 md:mb-0 mt-0">
                 <a
                   onClick={(e) => {
                     e.preventDefault();
                     handleModal(1);
                   }}
-                  className="hover:italic hover:cursor-pointer hover:font-bold transition-all duration-100"
+                  className="hover:cursor-pointer hover:font-bold transition-all duration-100 flex items-center relative group"
                 >
-                  message in a bottle
+                  trip treats
+                  <GiMushroomHouse className="ml-2" />
+                  {/* underline animation */}
+                  <span className="absolute left-1/2 -bottom-1 h-[0.5px] w-0 bg-font-color transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </a>
               </li>
-              <li className="mb-4 md:mb-0">
+              {/* <li className="mb-4 md:mb-0">
                 <a
                   onClick={(e) => {
                     e.preventDefault();
                     handleModal(2);
                   }}
-                  className="hover:italic hover:cursor-pointer hover:font-bold transition-all duration-100"
+                  className="hover:cursor-pointer hover:font-bold transition-all duration-100"
                 >
                   mailing list
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
