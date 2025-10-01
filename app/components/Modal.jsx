@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 //import TextForm from "./TextForm";
 import MailingList from "./MailingList";
 import { GiMushroomHouse } from "react-icons/gi";
+import { AiOutlineCloseSquare } from "react-icons/ai";
+
 
 
 const Modal = ({ isOpen, handleModalClose, activeContent }) => {
@@ -38,10 +40,10 @@ const Modal = ({ isOpen, handleModalClose, activeContent }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <button
-          className="absolute top-20 right-0"
+          className="absolute top-20 right-10"
           onClick={handleModalClose}
         >
-          <span className="font-bold text-lg text-font-color">x</span>
+          <AiOutlineCloseSquare className="text-lg text-font-color" />
         </button>
         <div className="modal-content w-[400px] h-[400px] flex items-center justify-center">
           {activeContent === 0 && (
