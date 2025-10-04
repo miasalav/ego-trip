@@ -45,7 +45,7 @@ export default function ArtistPage() {
               </div>
               <div className="w-full md:w-1/2 flex justify-start mt-16 flex-col">
                 <h2 className="text-4xl mb-6 font-bold max-w-[250px]">MIXES</h2>
-                <ol className="font-bold list-decimal">
+                <ol className="font-bold list-decimal pl-4">
                   <li className="transform transition-all duration-200 hover:translate-x-1.5 hover:underline">
                     <Link href="https://soundcloud.com/pipipigroup/gi-gi-79-cloudy" target="_blank">Pi Pi PI - 79 Degrees Cloudy Gi Gi</Link>
                   </li>
@@ -62,7 +62,7 @@ export default function ArtistPage() {
               </div>
               <div className="w-full md:w-1/2 flex justify-start mt-16 flex-col">
                 <h2 className="text-4xl mb-6 font-bold max-w-[250px]">INTERVIEWS</h2>
-                <ol className="font-bold list-decimal">
+                <ol className="font-bold list-decimal pl-4">
                   <li className="transform transition-all duration-200 hover:translate-x-1.5 hover:underline">
                     <Link href="https://www.lowendtheorists.com/theory-therapy-mixes/theory-therapy-19-gi-gi" target="_blank">Low End Theorists</Link>
                   </li>
