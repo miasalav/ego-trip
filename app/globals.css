@@ -36,3 +36,29 @@ p {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+@layer utilities {
+  /* Transparent track */
+  .scrollbar-track-transparent::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  /* Colored thumb */
+  .scrollbar-thumb-font::-webkit-scrollbar-thumb {
+    background-color: var(--fontColor);
+    border-radius: 9999px;
+  }
+
+  /* Set scrollbar width */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+    color: blue;
+  }
+
+  /* Firefox support */
+  .scrollbar-thumb-font {
+    scrollbar-color: var(--fontColor) transparent; /* thumb | track */
+    scrollbar-width: thin;
+  }
+}

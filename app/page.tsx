@@ -7,6 +7,7 @@ import { GiMushroomHouse } from "react-icons/gi";
 import { IoTicketSharp } from "react-icons/io5";
 import { FaFly } from "react-icons/fa";
 import { IoMdRadio } from "react-icons/io";
+import Image from "next/image";
 
 
 
@@ -69,15 +70,22 @@ export default function Home() {
         className={`absolute inset-0 w-full h-full object-cover -z-20 transition-opacity duration-700`}
       />
 
-      <main className="flex items-center z-50 min-h-screen w-full justify-center relative">
+      <main className="flex items-center z-50 w-full justify-center relative">
         <div className="container flex items-center justify-center relative">
           <nav className="relative w-full max-w-[700px] mt-10 md:mt-30">
-            <h1 className="font-garamond text-6xl text-center font-bold text-font-color">
+            {/* <h1 className="font-garamond text-6xl text-center font-bold text-font-color">
               EGO TRIP
-            </h1>
+            </h1> */}
+            <Image
+              src="/images/ego-trip-logo.png"  
+              alt="Ego Trip Logo"
+              width={300}
+              height={400}
+              className="m-auto"
+            />
             <span className="text-font-color text-lg font-bold text-center block m-auto italic">with Gi Gi</span>
             
-            <p className="text-font-color text-sm text-center py-6">10.19.2025 <br/> 1345 rue de bellechasse</p>
+            <p className="text-font-color text-sm text-center py-4">10.19.2025 <br/> 1345 rue de bellechasse</p>
             <ul className="text-md text-font-color font-garamond flex flex-col md:flex-row items-center md:justify-between mt-4 md:mt-0">
             <li className="mb-2 md:mb-0">
                 <Link
@@ -90,7 +98,7 @@ export default function Home() {
                   <span className="absolute left-1/2 -bottom-1 h-[0.5px] w-0 bg-font-color transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </Link>
               </li>
-              <li className="mb-2 md:mb-0  mt-0 md:mt-20 lg:mt-30">
+              <li className="mb-2 md:mb-0  mt-0 md:mt-10 lg:mt-20">
                 <a
                   onClick={(e) => {
                     e.preventDefault();
@@ -104,7 +112,7 @@ export default function Home() {
                   <span className="absolute left-1/2 -bottom-1 h-[0.5px] w-0 bg-font-color transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </a>
               </li>
-              <li className="mb-2 md:mb-0 mt-0 md:mt-20 lg:mt-30">
+              <li className="mb-2 md:mb-0 mt-0 md:mt-10 lg:mt-20">
                 <a
                   onClick={openForm}
                   className="hover:cursor-pointer hover:font-bold transition-all duration-100 flex items-center relative group"

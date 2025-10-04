@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import MailingList from "./MailingList";
 import { GiMushroomHouse } from "react-icons/gi";
 import { AiOutlineCloseSquare } from "react-icons/ai";
+import InfoBox from "./InfoBox";
+import Menu from "./Menu";
 
 
 
@@ -45,28 +47,9 @@ const Modal = ({ isOpen, handleModalClose, activeContent }) => {
         >
           <AiOutlineCloseSquare className="text-lg text-font-color" />
         </button>
-        <div className="modal-content w-[400px] h-[400px] flex items-center justify-center">
-          {activeContent === 0 && (
-              <div>
-                <h3 className="text-font-color text-lg font-bold mb-3">Credits</h3>
-                <ul className="text-font-color text-sm">
-                  <li className=""><strong className="italic mr-2">Lighting:</strong> Jane Doe</li>
-                  <li className=""><strong className="italic mr-2">Web:</strong> Mia Salaveria</li>
-                  <li className=""><strong className="italic mr-2">Logo:</strong> Jane Doe</li>
-                  <li className=""><strong className="italic mr-2">Carpentry:</strong> Jane Doe</li>
-                  <li className=""><strong className="italic mr-2">Food:</strong> Jane Doe</li>
-                  <li className=""><strong className="italic mr-2">Parquette:</strong> Jane Doe</li>
-                  <li className=""><strong className="italic mr-2">DJ:</strong> Gi Gi</li>
-                </ul>
-              </div>
-            )
-          }
-          {activeContent === 1 && ( 
-            <div className="text-font-color">
-              <h2 className="text-2xl font-bold flex items-center ">trip treats<GiMushroomHouse className="ml-2" /></h2>
-              <h3 className="text-md font-bold">Menu</h3>
-            </div>
-          )}
+        <div className="modal-content w-full md:w-[500px] h-[400px] flex items-center justify-center">
+          {activeContent === 0 && <InfoBox/>}
+          {activeContent === 1 && <Menu />}
           {/* {activeContent === 1 && <TextForm />} */}
           {/* {activeContent === 2 && <MailingList />} */}
         </div>
