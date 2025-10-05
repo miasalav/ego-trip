@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 //import TextForm from "./TextForm";
 import MailingList from "./MailingList";
-import { GiMushroomHouse } from "react-icons/gi";
 import { AiOutlineCloseSquare } from "react-icons/ai";
-import InfoBox from "./InfoBox";
+import InfoOne from "./InfoOne";
+import InfoTwo from "./InfoTwo";
 import Menu from "./Menu";
 
 
@@ -48,8 +48,9 @@ const Modal = ({ isOpen, handleModalClose, activeContent }) => {
           <AiOutlineCloseSquare className="text-lg text-font-color" />
         </button>
         <div className="modal-content w-full md:w-[500px] h-[400px] flex items-center justify-center">
-          {activeContent === 0 && <InfoBox/>}
-          {activeContent === 1 && <Menu />}
+          {activeContent === 0 && <InfoOne/>}
+          {activeContent === 1 && <InfoTwo/>}
+          {activeContent === 2 && <Menu />}
           {/* {activeContent === 1 && <TextForm />} */}
           {/* {activeContent === 2 && <MailingList />} */}
         </div>
