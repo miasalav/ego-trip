@@ -80,7 +80,7 @@ export default function Home() {
             
             <p className="text-font-color text-xs text-center py-4">10.19.2025 <br/> 1345 rue de bellechasse</p>
             <ul className="text-md text-font-color text-xs flex flex-col md:flex-row items-center md:justify-between mt-4 md:mt-0 font-bold">
-            <li className="mb-6 md:mb-0">
+            <li className="mb-8 md:mb-0">
                 <a
                   onClick={(e) => {
                     e.preventDefault();
@@ -91,7 +91,7 @@ export default function Home() {
                   ✦ before you fly ✦
                 </a>
               </li>
-              <li className="mb-6 md:mb-0  mt-0 md:mt-10 lg:mt-20">
+              <li className="mb-8 md:mb-0  mt-0 md:mt-10 lg:mt-20">
                 <Link
                   href="/artist"
                   className="border border-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer transition-all duration-300"
@@ -99,7 +99,7 @@ export default function Home() {
                   ✦ about your captain ✦
                 </Link>
               </li>
-              <li className="mb-6 md:mb-0  mt-0 md:mt-10 lg:mt-20">
+              <li className="mb-8 md:mb-0  mt-0 md:mt-10 lg:mt-20">
                <a
                   onClick={(e) => {
                     e.preventDefault();
@@ -110,7 +110,7 @@ export default function Home() {
                   ✦ inflight entertainment ✦
                 </a>
               </li>
-              <li className="mb-6 md:mb-0 mt-0 md:mt-10 lg:mt-20">
+              <li className="mb-8 md:mb-0 mt-0 md:mt-10 lg:mt-20">
                 <a
                   onClick={(e) => {
                     e.preventDefault();
@@ -121,7 +121,7 @@ export default function Home() {
                   ✦ trip treats ✦
                 </a>
               </li>
-              <li className="mb-6 md:mb-0 mt-0">
+              <li className="mb-8 md:mb-0 mt-0">
                 <a
                   onClick={openForm}
                   className="border border-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)] py-2 px-3 hover:cursor-pointer hover:font-bold transition-all duration-100"
@@ -129,7 +129,7 @@ export default function Home() {
                   ✦ tickets ✦
                 </a>
               </li>
-              {/* <li className="mb-6 md:mb-0">
+              {/* <li className="mb-8 md:mb-0">
                 <a
                   onClick={(e) => {
                     e.preventDefault();
