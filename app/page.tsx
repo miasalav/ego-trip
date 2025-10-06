@@ -76,7 +76,7 @@ export default function Home() {
               height={400}
               className="m-auto"
             />
-            <span className="text-font-color text-lg font-bold text-center block m-auto">with Gi Gi</span>
+            <span className="text-font-color text-md -tracking-[1px] text-center block m-auto italic">with Gi Gi</span>
             
             <p className="text-font-color text-xs text-center py-4">10.19.2025 <br/> 1345 rue de bellechasse</p>
             <ul className="text-md text-font-color text-xs flex flex-col md:flex-row items-center md:justify-between mt-4 md:mt-0 font-bold">
@@ -86,7 +86,7 @@ export default function Home() {
                     e.preventDefault();
                     handleModal(0);
                   }}
-                  className="border border-font-color hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer transition-all duration-100"
+                  className="border border-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer transition-all duration-100"
                 >
                   ✦ before you fly ✦
                 </a>
@@ -94,7 +94,7 @@ export default function Home() {
               <li className="mb-6 md:mb-0  mt-0 md:mt-10 lg:mt-20">
                 <Link
                   href="/artist"
-                  className="border border-font-color hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer transition-all duration-300"
+                  className="border border-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer transition-all duration-300"
                 >
                   ✦ about your captain ✦
                 </Link>
@@ -105,7 +105,7 @@ export default function Home() {
                     e.preventDefault();
                     handleModal(1);
                   }}
-                  className="border border-font-color hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer transition-all duration-100"
+                  className="border border-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer transition-all duration-100"
                 >
                   ✦ inflight entertainment ✦
                 </a>
@@ -116,7 +116,7 @@ export default function Home() {
                     e.preventDefault();
                     handleModal(2);
                   }}
-                  className="border border-font-color hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer hover:font-bold transition-all duration-100"
+                  className="border border-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer hover:font-bold transition-all duration-100"
                 >
                   ✦ trip treats ✦
                 </a>
@@ -124,7 +124,7 @@ export default function Home() {
               <li className="mb-6 md:mb-0 mt-0">
                 <a
                   onClick={openForm}
-                  className="border border-font-color hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)] py-2 px-3 hover:cursor-pointer hover:font-bold transition-all duration-100"
+                  className="border border-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)] py-2 px-3 hover:cursor-pointer hover:font-bold transition-all duration-100"
                 >
                   ✦ tickets ✦
                 </a>
@@ -135,7 +135,7 @@ export default function Home() {
                     e.preventDefault();
                     handleModal(2);
                   }}
-                  className="border border-font-color hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer hover:font-bold transition-all duration-100"
+                  className="border border-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer hover:font-bold transition-all duration-100"
                 >
                   mailing list
                 </a>
