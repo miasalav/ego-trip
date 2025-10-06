@@ -13,7 +13,8 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-garamond: var(--font-cormorant-garamond), serif;
-  --font-raleway:  var(--font-raleway), sans-serif;
+  --font-bricolage:  var(--font-bricolage), sans-serif;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,12 +27,12 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  --font-raleway:  var(--font-raleway), sans-serif;
+  --font-bricolage:  var(--font-bricolage), sans-serif;
   /* font-family: var(--font-cormorant-garamond), serif; */
 }
 
 p {
-  --font-raleway:  var(--font-raleway), sans-serif;
+  --font-bricolage:  var(--font-bricolage), sans-serif;
  /* font-family: var(--font-cormorant-garamond), serif; */
 }
 

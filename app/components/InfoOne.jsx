@@ -32,46 +32,22 @@ const InfoOne = () => {
   return (
     <>
     <div className='relative'>
-        <section ref={scrollRef}  className="w-full flex flex-wrap justify-left items-center text-font-color overflow-y-scroll h-[400px] scrollbar-thin scrollbar-thumb-font scrollbar-track-transparent px-3">
+        <section ref={scrollRef}  className="w-full flex flex-wrap justify-left items-center text-font-color overflow-y-scroll h-[400px] scrollbar-thin scrollbar-thumb-font scrollbar-track-transparent px-8">
             <div className='mb-4'>
-                <h3 className="text-lg font-bold uppercase tracking-[1px] text-center mb-4">INFLIGHT ENTERTAINMENT</h3>
-                <ul className='pl-4 list-disc mt-2 text-xs'>
-                    <li><strong>music by</strong> Gi Gi from 2pm-10pm</li>
-                    <li><strong>movement by</strong>body time will lead a movement workshop from 2pm - 3pm (register) (credit to the fabulous <a className='underline mx-2' href="https://instagram.com/arriverflush" target='_blank'>@arriverflush</a> for this lovely idea!) </li>
-                    <li><strong>food by</strong> Elo <a className="underline" href="https://instagram.com/lesoupersuper" target='_blank'>IG</a></li>
-                    <li><strong>tarot by</strong> Yaku Chaska
+                <h3 className="text-2xl text-center mb-4 -tracking-[1px]">✦ inflight entertainment ✦</h3>
+                <ul className='pl-4 mt-2 text-xs'>
+                    <li className='leading-5 mb-5'><strong className='border py-1 px-2 rounded-2xl'>music by</strong> Gi Gi from 2pm-10pm</li>
+                    <li className='leading-5 mb-5'><strong className='border py-1 px-2 rounded-2xl'>movement by</strong> body time will lead a movement workshop from 2pm - 3pm (register) (credit to the fabulous <a className='underline mx-2' href="https://instagram.com/arriverflush" target='_blank'>@arriverflush</a> for this lovely idea!) </li>
+                    <li className='leading-5 mb-5'><strong className='border py-1 px-2 rounded-2xl'>food by</strong> Elo <a className="underline" href="https://instagram.com/lesoupersuper" target='_blank'>IG</a></li>
+                    <li className='leading-5 mb-5'><strong className='border py-1 px-2 rounded-2xl'>tarot by</strong> Yaku Chaska
                         <a className='underline mx-2' href="https://instagram.com/lesoupersuper" target='_blank'>@lesoupersuper</a>
                         <a className='underline mr-2' href="https://xhslink.com/m/5K30IH9H63l" target='_blank'>Rednote</a>
                         <a className='underline mr-2' href="https://www.yakuchaska.com/" target='_blank'>Web</a>
                     </li>
-                    <li><strong>lighting by</strong> Steffi <a className='underline' href="https://www.instagram.com/crustybyduffy/" target='_blank'>@crustybyduffy</a></li>
-                    <li><strong>games by</strong> (insert name) throughout</li>
+                    <li className='leading-5 mb-5'><strong className='border py-1 px-2 rounded-2xl'>lighting by</strong> Steffi <a className='underline' href="https://www.instagram.com/crustybyduffy/" target='_blank'>@crustybyduffy</a></li>
+                    <li className='leading-5 mb-5'><strong className='border py-1 px-2 rounded-2xl'>games by</strong> (insert name) throughout</li>
                 </ul>
             </div>
-            {/* <div className='mb-4'>
-                <h3 className="text-lg font-bold">What should I expect?</h3>
-                <ul className='pl-4 text-sm list-disc'>
-                    <li>Psychedelics - not required but definitely recommended</li>
-                    <li>{`Boos, baes, & besties - anyone you might wanna snuggle & explore with <3`}</li>
-                </ul>
-            </div>
-            <div className='mb-4'>
-                <h3 className="text-lg font-bold">Will there be food?</h3>
-                <ul className='pl-4 text-sm list-disc'>
-                    <li>Yes! You can pay for a full menu and wine pairing when you buy your <a href="#" target='_blank'>ticket</a> (or after).
-                    <br></br> 
-                        <span className='text-xs italic'>We won’t be able to guarantee availability of the full menu during the event, so please pay for the food ticket in advance if that’s something you’re interested in. </span>
-                    </li>
-                    <li>Trip treats will also be available a la carte. </li>
-                </ul>
-            </div>
-            <div className='mb-4'>
-                <h3 className="text-lg font-bold">Is there anything else I need to know?</h3>
-                <ul className='pl-4 list-disc text-sm'>
-                    <li>{'No phones on the dancefloor - we aren’t going to take or sticker your phones. But we hope you’ll intuitively notice when being on a screen isn’t the vibe <3'}</li>
-                    <li>Lie, sit, trip, skip, kiss, hug, cry on the dancefloor, but please try to keep big convos to a minimum (we got lots of chill out zones for chat!).  </li>
-                </ul>
-            </div> */}
         </section>
     {/* Down arrow indicator */}
     {showArrow && (

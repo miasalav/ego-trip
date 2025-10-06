@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
+
 
 export default function ArtistPage() {
     return (
@@ -17,16 +19,14 @@ export default function ArtistPage() {
           <Link
             href="/"
             className="
-              inline-block
+              flex
               transform transition-all duration-200
               text-font-color
               hover:translate-x-1.5
-              hover:italic
-              hover:font-bold
+              items-center
             "
-          ><strong>
-            {"<<"} back to home
-            </strong>
+          >
+            <MdKeyboardDoubleArrowLeft/> back to home
           </Link>
 
             <div className="flex flex-wrap mt-16">
@@ -39,14 +39,14 @@ export default function ArtistPage() {
                 />
               </div>
               <div className="w-full md:w-2/3 md:pl-16 flex flex-col justify-end items-start">
-                <h2 className="text-6xl mb-6 font-bold -tracking-[1px]">who is Gi Gi?</h2>
+                <h2 className="text-4xl mb-6 font-bold -tracking-[1px]">who is Gi Gi?</h2>
                 <h3 className="italic font-bold mb-6 text-2xl">beautiful bliss spiller.</h3>
                 <p className="text-sm">utilizing a collage-based approach that takes in a wide swath of source material, Gi Gi produces a peculiar strain of ambient dance music equally at home in headphones or the back rooms of a club. As a DJ, the introspection that characterizes his music echoes throughout, but the net is cast wider. The energy oftentimes inches upwards, and styles that trace contours in his productions present themselves more directly. Bringing nuance and warmth to his DJing, Gi Gi nudges dancers towards reflection and loungers towards movement.
                 </p>
               </div>
               <div className="w-full md:w-1/2 flex justify-start mt-16 flex-col">
-                <h2 className="text-4xl mb-6 font-bold max-w-[250px]">mixes</h2>
-                <ol className="font-bold list-decimal pl-4">
+                <h2 className="text-3xl mb-6 font-bold max-w-[250px]">mixes</h2>
+                <ol className="list-decimal pl-4">
                   <li className="transform transition-all duration-200 hover:translate-x-1.5 hover:underline">
                     <Link href="https://soundcloud.com/pipipigroup/gi-gi-79-cloudy" target="_blank">Pi Pi PI - 79 Degrees Cloudy Gi Gi</Link>
                   </li>
@@ -62,8 +62,8 @@ export default function ArtistPage() {
                 </ol>
               </div>
               <div className="w-full md:w-1/2 flex justify-start mt-16 flex-col">
-                <h2 className="text-4xl mb-6 font-bold max-w-[250px]">interviews</h2>
-                <ol className="font-bold list-decimal pl-4">
+                <h2 className="text-3xl mb-6 font-bold max-w-[250px]">interviews</h2>
+                <ol className="list-decimal pl-4">
                   <li className="transform transition-all duration-200 hover:translate-x-1.5 hover:underline">
                     <Link href="https://www.lowendtheorists.com/theory-therapy-mixes/theory-therapy-19-gi-gi" target="_blank">Low End Theorists</Link>
                   </li>

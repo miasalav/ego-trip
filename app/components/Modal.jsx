@@ -48,8 +48,8 @@ const Modal = ({ isOpen, handleModalClose, activeContent }) => {
           <AiOutlineCloseSquare className="text-lg text-font-color" />
         </button>
         <div className="modal-content w-full md:w-[500px] h-[400px] flex items-center justify-center">
-          {activeContent === 0 && <InfoOne/>}
-          {activeContent === 1 && <InfoTwo/>}
+          {activeContent === 0 && <InfoTwo/>}
+          {activeContent === 1 && <InfoOne/>}
           {activeContent === 2 && <Menu />}
           {/* {activeContent === 1 && <TextForm />} */}
           {/* {activeContent === 2 && <MailingList />} */}

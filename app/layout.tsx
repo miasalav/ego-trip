@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Cormorant_Garamond } from "next/font/google";
-import { Raleway } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 
 import "./globals.css";
 
@@ -23,10 +23,10 @@ const garamond = Cormorant_Garamond({
   weight: ["400", "500", "600", "700"],
 });
 
-const raleway = Raleway({
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"], 
-  variable: "--font-raleway", 
+  variable: "--font-bricolage", // optional but useful for Tailwind
 });
 
 export const metadata: Metadata = {
@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${garamond.variable} ${raleway.variable}  antialiased`} 
+        className={`${geistSans.variable} ${geistMono.variable} ${garamond.variable} ${bricolage.variable}  antialiased`} 
       >
        {children}
       </body>
