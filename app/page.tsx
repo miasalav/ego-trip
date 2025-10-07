@@ -70,7 +70,7 @@ export default function Home() {
 
       <main className="flex items-center z-50 w-full justify-center relative">
         <div className="container flex items-center justify-center relative">
-          <div className="flex justify-center absolute right-10 top-10 z-50">
+          <div className="flex justify-center absolute right-10 top-0 md:top-10 z-50">
               <a
                   onClick={openForm}
                   className="mb-3 md:mb-0 font-bold text-sm text-white bg-[#d57b0e] rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)] py-1 px-2 hover:cursor-pointer hover:font-bold transition-all duration-100 flex items-center"
