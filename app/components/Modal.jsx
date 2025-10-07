@@ -42,7 +42,7 @@ const Modal = ({ isOpen, handleModalClose, activeContent }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <button
-          className="absolute top-40 right-20 md:top-50 md:right-20 z-50"
+          className="absolute top-40 right-5 md:top-50 md:right-20 z-50"
           onClick={handleModalClose}
         >
           <AiOutlineCloseSquare className="text-lg text-font-color" />
