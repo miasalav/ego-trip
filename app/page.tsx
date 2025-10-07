@@ -70,15 +70,6 @@ export default function Home() {
 
       <main className="flex items-center z-50 w-full justify-center relative">
         <div className="container flex items-center justify-center relative">
-          <div className="flex justify-center absolute right-10 top-10 md:top-10 z-50">
-              <a
-                  onClick={openForm}
-                  className="mb-3 md:mb-0 font-bold text-sm text-white bg-[#d57b0e] rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)] py-1 px-2 hover:cursor-pointer hover:font-bold transition-all duration-100 flex items-center"
-                >
-                  <IoTicketOutline className="mr-1"/>
-                  tickets 
-              </a>
-            </div>
           <nav className="relative w-full max-w-[700px] mt-10 md:mt-30 flex flex-col">
             <Image
               src="/images/ego-trip-logo.png"  
@@ -88,9 +79,18 @@ export default function Home() {
               className="m-auto"
             />
             <span className="text-font-color text-md -tracking-[1px] text-center block m-auto italic">with Gi Gi</span>
-            
             <p className="text-font-color text-xs text-center py-4">10.19.2025 <br/> 1345 rue de bellechasse</p>
-          <ul className="text-md text-font-color text-xs flex flex-col md:flex-row items-center md:justify-between mt-4 md:mt-0 font-bold">
+
+            <div className="flex justify-center">
+              <a
+                  onClick={openForm}
+                  className="mb-3 md:mb-0 font-bold text-sm border border-font-color text-font-color hover:text-white hover:bg-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)] py-1 px-3 hover:cursor-pointer hover:font-bold transition-all duration-300 flex items-center"
+                >
+                  tickets 
+              </a>
+            </div>
+
+          <ul className="text-md text-font-color text-xs flex flex-col md:flex-row items-center md:justify-between mt-6 md:mt-0 font-bold">
             <li className="mb-4 md:mb-0">
                 <a
                   onClick={(e) => {
