@@ -36,7 +36,7 @@ const InfoOne = () => {
             <div className='mb-4'>
                 <h3 className="text-2xl text-center mb-4 -tracking-[1px]">✦ inflight entertainment ✦</h3>
                 <ul className='pl-4 mt-2 text-xs'>
-                    <li className='leading-5 mb-5'><strong className='border py-1 px-2 rounded-2xl'>music by</strong> Gi Gi from 4pm-12am</li>
+                    <li className='leading-5 mb-5'><strong className='border py-1 px-2 rounded-2xl mr-1'>music by</strong><a className='underline' href="https://www.instagram.com/gi____gi_____/" target='_blank'>Gi Gi</a> from 4pm-12am</li>
                     <li className='leading-5 mb-5'><strong className='border py-1 px-2 rounded-2xl'>movement by</strong> body time will lead a movement workshop from 2pm - 3pm (register) (credit to the fabulous <a className='underline mx-2' href="https://instagram.com/arriverflush" target='_blank'>@arriverflush</a> for this lovely idea!) </li>
                     <li className='leading-5 mb-5'><strong className='border py-1 px-2 rounded-2xl'>food by</strong> Elo <a className="underline" href="https://instagram.com/lesoupersuper" target='_blank'>IG</a></li>
                     <li className='leading-5 mb-5'><strong className='border py-1 px-2 rounded-2xl'>tarot by</strong> Yaku Chaska
