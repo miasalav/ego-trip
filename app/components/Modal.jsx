@@ -35,14 +35,14 @@ const Modal = ({ isOpen, handleModalClose, activeContent }) => {
       onClick={handleModalClose}
     >
       <div
-        className={`w-[700px] h-[700px] bg-[radial-gradient(circle,_rgba(255,241,179)_50%,_rgba(255,255,255,0)_70%)] rounded-full relative flex items-center justify-center
+        className={`w-[700px] h-[700px] bg-[radial-gradient(circle,_rgba(252,253,243)_50%,_rgba(255,255,255,0)_70%)] rounded-full relative flex items-center justify-center
           transition-all duration-700 ${
             visible ? "scale-100 opacity-100" : "scale-95 opacity-0"
           }`}
         onClick={(e) => e.stopPropagation()}
       >
         <button
-          className="absolute top-20 right-10"
+          className="absolute top-40 right-20 md:top-50 md:right-20"
           onClick={handleModalClose}
         >
           <AiOutlineCloseSquare className="text-lg text-font-color" />
