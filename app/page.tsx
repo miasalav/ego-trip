@@ -68,7 +68,7 @@ export default function Home() {
 
       <main className="flex items-center z-50 w-full justify-center relative">
         <div className="container flex items-center justify-center relative">
-          <nav className="relative w-full max-w-[850px] mt-10 md:mt-30">
+          <nav className="relative w-full max-w-[600px] mt-10 md:mt-30 flex flex-col">
             <Image
               src="/images/ego-trip-logo.png"  
               alt="Ego Trip Logo"
@@ -79,63 +79,71 @@ export default function Home() {
             <span className="text-font-color text-md -tracking-[1px] text-center block m-auto italic">with Gi Gi</span>
             
             <p className="text-font-color text-xs text-center py-4">10.19.2025 <br/> 1345 rue de bellechasse</p>
-            <ul className="text-md text-font-color text-xs flex flex-col md:flex-row items-center md:justify-between mt-4 md:mt-0 font-bold">
-            <li className="mb-8 md:mb-0">
+            <div className="w-full flex justify-center">
+              <a
+                  onClick={openForm}
+                  className="mb-3 md:mb-0 border border-font-color text-sm text-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)] py-1 px-2 hover:cursor-pointer hover:font-bold transition-all duration-100"
+                >
+                  ✦ tickets ✦
+              </a>
+            </div>
+          <ul className="text-md text-font-color text-xs flex flex-col md:flex-row items-center md:justify-between mt-4 md:mt-0 font-bold">
+            <li className="mb-6 md:mb-0 md:w-[180px]">
                 <a
                   onClick={(e) => {
                     e.preventDefault();
                     handleModal(0);
                   }}
-                  className="border border-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer transition-all duration-100"
+                  className="w-full rounded-2xl hover:[text-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer transition-all duration-100"
                 >
                   ✦ before you fly ✦
                 </a>
               </li>
-              <li className="mb-8 md:mb-0  mt-0 md:mt-10 lg:mt-20">
+              <li className="mb-6 md:mb-0  mt-0 md:mt-10 lg:mt-20 md:w-[180px]">
                 <Link
                   href="/artist"
-                  className="border border-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer transition-all duration-300"
+                  className="w-full hover:[text-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer transition-all duration-300"
                 >
                   ✦ about your captain ✦
                 </Link>
               </li>
-              <li className="mb-8 md:mb-0  mt-0 md:mt-10 lg:mt-20">
+              <li className="mb-6 md:mb-0 md:w-[180px]">
                <a
                   onClick={(e) => {
                     e.preventDefault();
                     handleModal(1);
                   }}
-                  className="border border-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer transition-all duration-100"
+                  className="w-full hover:[text-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer transition-all duration-100"
                 >
                   ✦ inflight entertainment ✦
                 </a>
               </li>
-              <li className="mb-8 md:mb-0 mt-0 md:mt-10 lg:mt-20">
+              {/* <li className="mb-8 md:mb-0 mt-0 md:mt-10 lg:mt-20">
                 <a
                   onClick={(e) => {
                     e.preventDefault();
                     handleModal(2);
                   }}
-                  className="border border-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer hover:font-bold transition-all duration-100"
+                  className="hover:[text-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer hover:font-bold transition-all duration-100"
                 >
                   ✦ trip treats ✦
                 </a>
-              </li>
-              <li className="mb-8 md:mb-0 mt-0">
+              </li> */}
+              {/* <li className="mb-8 md:mb-0 mt-0">
                 <a
                   onClick={openForm}
-                  className="border border-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)] py-2 px-3 hover:cursor-pointer hover:font-bold transition-all duration-100"
+                  className="hover:[text-shadow:_2px_2px_6px_rgba(0,0,0,0.25)] py-2 px-3 hover:cursor-pointer hover:font-bold transition-all duration-100"
                 >
                   ✦ tickets ✦
                 </a>
-              </li>
+              </li> */}
               {/* <li className="mb-8 md:mb-0">
                 <a
                   onClick={(e) => {
                     e.preventDefault();
                     handleModal(2);
                   }}
-                  className="border border-font-color rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer hover:font-bold transition-all duration-100"
+                  className="border border-font-color bg-[#f7e1b4] rounded-2xl hover:[box-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer hover:font-bold transition-all duration-100"
                 >
                   mailing list
                 </a>
