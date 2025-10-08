@@ -131,7 +131,7 @@ export default function Home() {
                   }}
                   className="w-full hover:[text-shadow:_2px_2px_6px_rgba(0,0,0,0.25)]  py-2 px-3 hover:cursor-pointer transition-all duration-100"
                 >
-                  ✦ inflight entertainment ✦
+                  ✦ in-flight entertainment ✦
                 </a>
               </li>
               {/* <li className="mb-8 md:mb-0 mt-0">
