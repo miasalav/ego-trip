@@ -40,7 +40,7 @@ const InfoTwo = () => {
                 <p className='text-xs mb-6 italic'>let me take you on a journey…</p>
                 <p className='text-xs mb-2'>start with a question and find your answer. get really silly and laugh ‘til you cry. fall in love with he, or she, or they or you. how good it feels to be in this part of the simulation? where the october sky in montreal is so, so big & beautiful, & blue? remember boot? remember who you wanted to be when you were 7? be that. live that. play, cuddle, dream, and then do all three in reverse. it’s that sort of vibe - y’know? </p>
                 <p className='text-xs mb-6'>do you wanna know about the music? it’s gonna be really fucking perfect, special, and full of feeling. gi gi has 8 hours to earn your trust, but i think it will only take 8-minutes. beauty is slow and gentle because it’s asking you to stay. be patient. take your time. settle in. don’t pressure yourself to dance or listen or speak…. just be. it will feel easier than you think, i promise. it’s a sound that you just wanna be in a room with. </p>
-                <p className='text-xs mb-2 text-right italic'>come early if you can. there’s lots to take in on your journey...</p>
+                <p className='text-xs mb-2 text-right italic'>come early - stay late.</p>
             </div>
         </section>
     {/* Down arrow indicator */}
