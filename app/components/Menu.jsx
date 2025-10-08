@@ -52,6 +52,15 @@ const Menu = () => {
                     <li>Orangesicle (orange and tonka bean) mocktail <strong className='italic'>$6</strong></li>
                 </ul>
             </div>
+            <div className='mb-4 w-full'>
+                <h3 className="text-lg text-center underline">ego trip menu - a la carte</h3>
+                <p className='italic text-xs mb-4 text-center'>*available with purchase of an ego trip menu ticket</p>
+                <ul className='pl-6 text-xs list-disc mb-6'>
+                    <li>3 treats <span className='italic'>(2 savory, 1 sweet)</span>
+                    </li>
+                    <li>2 non-psychedelic drinks</li>
+                </ul>
+            </div>
             
             <div className='mb-10'>
                 <h3 className="text-lg mb-3 text-center">Food by Elo <a className='underline hover:font-bold' href='https://instagram.com/lesoupersuper' target='_blank'>@lesoupersuper</a></h3>

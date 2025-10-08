@@ -53,6 +53,7 @@ export default function Home() {
         autoPlay
         muted
         playsInline
+        preload="auto" 
         className={`absolute inset-0 w-full h-full object-cover -z-10 transition-opacity duration-700 ${
           showLoop ? "opacity-0" : "opacity-100"
         }`}
@@ -65,6 +66,7 @@ export default function Home() {
         muted
         loop
         playsInline
+        preload="auto" 
         className={`absolute inset-0 w-full h-full object-cover -z-20 transition-opacity duration-700`}
       />
 
