@@ -53,7 +53,7 @@ const Menu = () => {
                 </ul>
             </div>
             <div className='mb-4 w-full'>
-                <h3 className="text-lg text-center underline">ego trip menu - a la carte</h3>
+                <h3 className="text-lg text-center underline">ego trip - full menu</h3>
                 <p className='italic text-xs mb-4 text-center'>*available with purchase of an ego trip menu ticket</p>
                 <ul className='pl-6 text-xs list-disc mb-6'>
                     <li>3 treats <span className='italic'>(2 savory, 1 sweet)</span>
