@@ -1,3 +1,4 @@
+import { li } from 'framer-motion/client';
 import React, { useEffect, useRef, useState } from 'react'
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
@@ -37,19 +38,19 @@ const Menu = () => {
                 <h3 className="text-lg text-center underline mb-4">ego trip menu - a la carte</h3>
                 <h4 className='text-sm border border-font-color py-1 px-2 rounded-2xl inline-block mb-2'><strong>Food (Savory)</strong></h4>
                 <ul className='pl-6 text-xs list-disc mb-6'>
-                    <li>Waffle sandwich filled with chicken, slaw, fried shallots and delicious sauce (tofu available) <strong className='italic'>12$</strong></li>
-                    <li>Tofu cake on skewers served in warm broth with tokyo turnips <strong className='italic'>$9</strong></li>
+                    <li>Waffle sandwich filled with chicken, slaw, fried shallots and delicious sauce (tofu available) <strong className='italic'>$16</strong></li>
+                    <li>Tofu cake on skewers served in warm broth with tokyo turnips <strong className='italic'>$13</strong></li>
                 </ul>
                 <h4 className='text-sm border border-font-color py-1 px-2 rounded-2xl inline-block mb-2'><strong>Food (Sweet)</strong></h4>
                 <ul className='pl-6 text-xs list-disc mb-6'>
-                    <li>Gem Candy (Jade, Quartz, Amethyst, Onyx)  <strong className='italic'>3$</strong></li>
-                    <li>Dark Chocolate Cake on a Stick <strong className='italic'>$6</strong></li>
+                    <li>Gem Candy (Jade, Quartz, Amethyst, Onyx)  <strong className='italic'>$5</strong></li>
+                    <li>Dark Chocolate Cake on a Stick <strong className='italic'>$8</strong></li>
                 </ul>
                 <h4 className='text-sm border border-font-color py-1 px-2 rounded-2xl inline-block mb-2'><strong>Drinks (for 150ml each)</strong></h4>
                 <ul className='pl-6 text-xs list-disc mb-6'>
-                    <li>Roasted oat milk chai shroom tea <strong className='italic'>$3</strong></li>
-                    <li>Cranberry and rose slushie <strong className='italic'>$5</strong></li>
-                    <li>Orangesicle (orange and tonka bean) mocktail <strong className='italic'>$6</strong></li>
+                    <li>Mushroom tea <strong className='italic'>TBD</strong></li>
+                    <li>Cranberry and rose slushie <strong className='italic'>$7</strong></li>
+                    <li>Orangesicle (orange and tonka bean) mocktail <strong className='italic'>$8</strong></li>
                 </ul>
             </div>
             <div className='mb-4 w-full'>
